@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    width: 100%;
+    display: block;
+    margin: 0;
+    min-height: 93vh;
+    height: 400px;
+    background-image: url("C:/users/usuario1/Desktop/Imagen/seguridad.jpg"); /*como poner imagen de fondo, si fuera solo color se usaria color: ;*/
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255); /*color de la letras*/
+    text-shadow: #5a5959 0 0 .09em; /*borde de las letras*/
+}
+
+.titulo_principal {
+    color: rgb(202, 31, 17);
+    font-size: 70px;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+}
+
+.formularios {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+}
+
+.form_encriptar,
+.form-desencriptar {
+    margin: 20px;
+}
+
+#entrada_texto, #salida_texto {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: rgb(14, 42, 133);
+    background-color: ##ffffff; /*color del campo de texto*/
+    border: 3px solid rgb(14, 133, 129);
+}
+
+.formularios button { /*para darle formato a los botones*/
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 10px;
+    box-shadow: 20px 0px 30px -5px #5a5959;
+    border: 2px solid rgb(255, 255, 255); /*"contorno" de afuera del boton*/
+    background-color: rgb(1, 14, 34); /*fondo del boton*/
+    color: #5fdb9a; /*color de la letra del boton*/
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.formularios label {
+    text-align: center;
+}
+
+.boton_izquierdo {
+    margin-left: 100px;
+}
+
+.boton_derecho {
+    margin-left: 10px;
+}
+
+.derechos {
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(0, 72, 106);
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    bottom: 0;
+}

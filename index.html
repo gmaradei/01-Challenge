@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!sirve para que se vena los acentos en internet explorer o firefox, para google no es necesario>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!vista de compatibilidad>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!sirve para poder "abrir" nuestra página creada en cualquier dispositivo, smartphone, tablet, etc y se ajusta a su pantalla>
+    <link rel="stylesheet" href="style.css"> <!sirve para incluir en mi HTML, todos mis formatos establecidos en CSS>
+    <title>Primer Challenge Oracle + Alura LATAM</title>
+</head>
+<body>
+    <h1 class="titulo_principal">Código Secreto</h1> <!class se utiliza para hacer "llamadas" en css y determinar formato>
+    <section class="formularios">
+        <div class="form_encriptar">
+            <label for="input-texto"><h2>Ingrese el texto a encriptar</h2></label>
+            <textarea id="entrada_texto" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="Solo letras minusculas, sin acento ni caracteres especiales..."></textarea>
+            <br>
+            <button class="boton_izquierdo" onclick="botonEncriptar()">Encriptar!</button>
+            <button class="boton_derecho" onclick="botonDesencriptar()">Desencriptar!</button>
+        </div>
+    
+        <div class="form-desencriptar">
+            <label for="output-texto"><h2 id="titulo-desencriptar">Mensaje encriptado</h2></label>
+            <textarea id="salida_texto" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="Escriba algo aqui..."></textarea>
+            <br>
+            <button class="boton_izquierdo" onclick="botonCopiar()">Copiar!</button>
+            <button class="boton_derecho" onclick="botonPegar()">Copiar y Pegar!</button>
+        </div>
+    </section>
+   
+    <footer class="derechos">
+        <p>Todos los derechos reservados | © 2022 Gonzalo Maradei</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
